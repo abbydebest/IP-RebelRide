@@ -1,0 +1,429 @@
+@font-face {
+  font-family: "HKgrotesk";
+  src: url("../fonts/hk-grotesk/HKGrotesk-Regular.otf");
+}
+
+@font-face {
+  font-family: "HKgroteskMedium";
+  src: url("../fonts/hk-grotesk/HKGrotesk-Medium.otf");
+}
+
+@font-face {
+  font-family: "HKgroteskSemiBold";
+  src: url("../fonts/hk-grotesk/HKGrotesk-SemiBold.otf");
+}
+
+.startscreen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.startcontainer {
+  text-align: center;
+  width: 40vw;
+  height: 50vh;
+  margin: 0 0 0 30%;
+}
+
+.startlogo {
+  width: 350px;
+  height: 300px;
+  margin: 0 0 0 10.5em;
+  background-image: url("../images/RebelRideLogo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.startbutton {
+  width: 250px;
+  height: 4.5em;
+  border: none;
+  border-radius: 50px;
+  margin: 2em 0 0 0;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.16));
+  background-color: white;
+  font-family: HKgroteskSemiBold;
+  font-size: 1em;
+}
+
+.logo {
+  background-image: url("../images/RebelRideLogo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2em 2em 2em 6.5em;
+  height: 70px;
+  width: 120px;
+}
+
+body {
+  font-family: HKgroteskMedium;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+/* Pagina in 2 delen */
+.split {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* Het linker en rechter deel */
+.leftside,
+.rightside {
+  width: 50vw;
+  height: 50vw;
+}
+
+.leftside {
+  margin: 0 0 0 2em;
+}
+
+.rightside {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 4em 0 0;
+}
+
+/* Source Abarth image: https://www.behance.net/gallery/154102103/Abarth-695-70th-Anniversario */
+#car {
+  background-image: url("../images/abarth-595/abarth-livery/abarth-start.png");
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 50vw;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: 10%;
+}
+
+/* Panelen */
+#customise,
+#wallpapers {
+  margin: 0 4em 4em 4em;
+  width: 35vw;
+  height: 85vh;
+  position: absolute;
+  background-color: white;
+  border-radius: 45px;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.16));
+}
+
+.hidden {
+  display: none;
+}
+
+.tabs {
+  display: flex;
+  position: relative;
+  /* width: 35vw; */
+  height: 3.3em;
+  background-color: rgb(245, 245, 245);
+  border-radius: 50px;
+  margin: 2em;
+}
+
+.fakebutton1 {
+  width: 304px;
+  height: 2.7em;
+  border: none;
+  border-radius: 50px;
+  position: relative;
+  margin: 0.3em 0 0 0.3em;
+  filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.078));
+  background-color: white;
+  font-family: HKgroteskMedium;
+  font-size: 1em;
+}
+
+.fakebutton2 {
+  width: 304px;
+  height: 2.7em;
+  border: none;
+  border-radius: 50px;
+  position: relative;
+  margin: 0.3em 0.3em 0 0;
+  filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.078));
+  background-color: white;
+  font-family: HKgroteskMedium;
+  font-size: 1em;
+}
+
+.categories {
+  margin: 0 2.5em;
+  width: 30.5vw;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  gap: 1.3em;
+}
+
+.containercategory {
+  text-align: center;
+}
+
+.containercategory p {
+  margin: 0.5em 0 0 0;
+  font-size: 0.9em;
+}
+
+.categorybutton {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(245, 245, 245);
+  border: none;
+  border-radius: 50%;
+}
+
+#vehicle {
+  background-image: url("../images/emojis&icons/racing-car_1f3ce-fe0f.png");
+  background-size: 70%;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+}
+
+#coating {
+  background-image: url("../images/emojis&icons/nail-polish_light-skin-tone_1f485-1f3fb_1f3fb.png");
+  background-size: 50%;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+}
+
+#wheels {
+  background-image: url("../images/emojis&icons/fire_1f525.png");
+  background-size: 50%;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+}
+
+#exhaust {
+  background-image: url("../images/emojis&icons/dashing-away_1f4a8.png");
+  background-size: 50%;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+}
+
+#spoiler {
+  background-image: url("../images/emojis&icons/growing-heart_1f497-1.png");
+  background-size: 50%;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+}
+
+#bumper {
+  background-image: url("../images/emojis&icons/eyes_1f440.png");
+  background-size: 50%;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+}
+
+#accessories {
+  background-image: url("../images/emojis&icons/mirror-ball_1faa9.png");
+  background-size: 50%;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+}
+
+#colors {
+  background-image: url("../images/emojis&icons/sparkles_2728.png");
+  background-size: 50%;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+}
+
+#patterns {
+  background-image: url("../images/emojis&icons/leopard_1f406.png");
+  background-size: 50%;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+}
+
+#tabcustomise,
+#tabwallpaper {
+  width: 304px;
+  height: 2.7em;
+  border: none;
+  border-radius: 50px;
+  margin: 0.35em 0 0 0.35em;
+  position: relative;
+  background: none;
+  font-family: HKgroteskMedium;
+  font-size: 1em;
+}
+
+/* Alle knoppen gepositioneerd in container */
+.buttons {
+  display: flex;
+  flex-flow: wrap;
+  position: relative;
+  /* justify-content: space-between; */
+  gap: 2.3em;
+  margin: 2em 2.5em;
+  padding: 0.5em 0.5em 0 0;
+  height: 465px;
+  overflow: scroll;
+  border-radius: 30px;
+}
+
+/* Source code: https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+.buttons::-webkit-scrollbar {
+  display: none;
+}
+
+/* Margin onderaan iedere knop */
+.container {
+  margin: 0 0 0.8em 0;
+}
+
+/* Margin rondom tekst */
+.container p {
+  margin: 1em 1em 1em 0.5em;
+}
+
+/* Knop */
+.button {
+  width: 11em;
+  height: 11em;
+  background-color: rgb(237, 237, 237);
+  border-radius: 30px;
+  border: none;
+}
+
+.button:focus {
+  border: 3px solid rgb(0, 0, 0);
+  /* background-color: pink; */
+}
+
+/* rgb(255, 128, 221) */
+
+button img {
+  width: 8.5em;
+  height: 8.5em;
+}
+
+/* Kleuren abarth */
+.monzagreen {
+  background-color: #6c8e8f;
+}
+
+.black {
+  background-color: black;
+}
+
+.black:focus {
+  border: 3px solid white;
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.256));
+}
+
+.white {
+  background-color: white;
+  filter: drop-shadow(1px 1px 6px rgba(0, 0, 0, 0.078));
+}
+
+.mintgreen {
+  background-color: #ecf3f0;
+}
+
+.pink {
+  background-color: #f7e4e6;
+}
+
+.neonpink {
+  background-color: #ff6cd8;
+}
+
+.neonyellow {
+  background-color: #eefe39;
+}
+
+.silverglitter {
+  background-image: url("../images/silver-glitter-background.jpg");
+  background-size: 400%;
+  background-repeat: no-repeat;
+  background-position-x: 70%;
+}
+
+.pantherprint {
+  background-image: url("../images/animal_print_background_with_pastel_colours.png");
+  background-size: 165%;
+  background-repeat: no-repeat;
+  background-position-x: 80%;
+}
+
+/* kleuren ferrari */
+.red {
+  background-color: #ed2603;
+}
+
+.yellow {
+  background-color: #fff200;
+}
+
+/* kleuren ducati */
+.ducred {
+  background-color: #b00e0a;
+}
+
+/* Kleuren nissan */
+.Nmonzagreen {
+  background-color: #6c8e8f;
+}
+
+.Nblack {
+  background-color: black;
+}
+
+.Nblack:focus {
+  border: 3px solid white;
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.256));
+}
+
+.Nwhite {
+  background-color: white;
+  filter: drop-shadow(1px 1px 6px rgba(0, 0, 0, 0.078));
+}
+
+.Nmintgreen {
+  background-color: #ecf3f0;
+}
+
+.Npink {
+  background-color: #f7e4e6;
+}
+
+.Nneonpink {
+  background-color: #ff6cd8;
+}
+
+.Nneonyellow {
+  background-color: #eefe39;
+}
+
+.silverglitter {
+  background-image: url("../images/silver-glitter-background.jpg");
+  background-size: 400%;
+  background-repeat: no-repeat;
+  background-position-x: 70%;
+}
+
+.pantherprint {
+  background-image: url("../images/animal_print_background_with_pastel_colours.png");
+  background-size: 165%;
+  background-repeat: no-repeat;
+  background-position-x: 80%;
+}
